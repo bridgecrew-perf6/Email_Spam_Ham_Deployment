@@ -1,3 +1,4 @@
+from crypt import methods
 from distutils.log import debug
 from unittest import result
 from flask import Flask, jsonify, request, render_template
@@ -7,7 +8,7 @@ app = Flask(__name__)
 
 res = ""
 
-@app.route("/")
+@app.route("/", methods=["GET"])
 def welcome_page():
     return render_template("index.html")
 
