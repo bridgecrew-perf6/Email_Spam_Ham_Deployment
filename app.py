@@ -1,8 +1,6 @@
 from distutils.log import debug
 from unittest import result
 from flask import Flask, jsonify, request, render_template
-import sys
-sys.path.append('../Models')
 import Svm_Prediction
 
 app = Flask(__name__)
