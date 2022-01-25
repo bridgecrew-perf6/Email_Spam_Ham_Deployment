@@ -3,6 +3,7 @@ import nltk
 import re
 
 nltk.download('stopwords')
+nltk.download('punkt')
 
 stop_words = nltk.corpus.stopwords.words('english')
 ps = nltk.PorterStemmer()
