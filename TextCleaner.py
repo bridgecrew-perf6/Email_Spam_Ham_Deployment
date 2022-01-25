@@ -2,6 +2,8 @@ import string
 import nltk
 import re
 
+nltk.download('stopwords')
+
 stop_words = nltk.corpus.stopwords.words('english')
 ps = nltk.PorterStemmer()
 wnlemma = nltk.WordNetLemmatizer()
