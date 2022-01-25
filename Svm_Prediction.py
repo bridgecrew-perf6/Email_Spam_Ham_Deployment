@@ -2,9 +2,6 @@ import TextCleaner as cleaner
 import string
 import pandas as pd
 import pickle
-import sys
-import os
-sys.path.append('../')
 
 
 
@@ -13,7 +10,6 @@ def count_punct(text):
     return round(count / (len(text) - text.count(" ")), 3)
 
 def get_predict(prediction_text):
-    sys.path.append('../')
 
     process_pred_text = pd.DataFrame([], columns=['body_len', 'punct%'])
 
