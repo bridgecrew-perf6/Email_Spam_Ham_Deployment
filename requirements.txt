@@ -4,7 +4,6 @@ cffi
 chardet
 click==8.0.3
 conda
-conda-package-handling
 cryptography
 distlib==0.3.4
 filelock==3.4.2
