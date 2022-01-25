@@ -24,4 +24,6 @@ def receive_text():
         return render_template('index.html', res = result[0])
     except Exception as e:
         return "{}".format(e)
-app.run(debug=True)
+
+if __name__ == '__main__':
+    app.run(debug=True)
